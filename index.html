@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Exercise</title>
+</head>
+<body>
+    <h1>Welcome to the 24x7 Compostela Fitness Club : Courts Reservation Page!!</h1>
+    <img src="./img/planification.png" alt="Image planification" width="300">
+    <form action="form.php" method="post">
+        <fieldset><legend>Member Demographics</legend>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+            <p>Are you a Member?</p>
+            <input type="radio" name="member" id="member" value="member">
+            <label for="member">Member</label>
+            <input type="radio" name="member" id="nonmember" value="nonmember">
+            <label for="nonmember">Non-member</label>
+            <br><br>        
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email">
+        </fieldset>
+        <label for="facility">Facility</label>
+        <select name="facility" id="facility">
+            <option value="indoor football">Indoor Football</option>
+            <option value="basketball">Basketball</option>
+            <option value="squash">Squash</option>
+            <option value="racquetball">Racquetball</option>
+            <option value="badminton">Badminton</option>
+        </select>
+        <p>Select a reservation date and time</p>
+        <input type="date" name="date" id="date">
+        <input type="time" name="time" id="time">
+        <br><br>
+        <input type="checkbox" name="policy" id="policy">
+        <label for="policy">I agree to the club's reservation policy</label>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
